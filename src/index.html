@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calkins Bartender - Electronics & Electrical System Manual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 1: COVER PAGE                                                        -->
+  <!-- ========================================================================= -->
+  <div class="page cover-page" id="page-1">
+    <div class="cover-border">
+      <div class="cover-header">
+        <div class="cover-title-logo-container">
+          <img class="cover-title-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+        </div>
+        <div class="cover-brand">22' CALKINS BARTENDER</div>
+        <div class="cover-subtitle">Electrical Systems Manual</div>
+        <div class="cover-services">Design • Installation • Operation • Maintenance</div>
+      </div>
+
+      <div class="cover-image-container">
+        <img src="assets/cover.jpg" alt="Calkins Bartender Wooden Boat">
+      </div>
+
+      <!-- Bottom Split Panel (Logo & Details side-by-side) -->
+      <div class="cover-bottom-split">
+        <div class="cover-bottom-left">
+          <img class="cover-logo" src="assets/logo.png" alt="Bartender Boats Logo">
+        </div>
+        <div class="cover-bottom-right">
+          <div class="cover-details">
+            <h3>22' Calkins Bartender • Inboard</h3>
+            <p>Late 1990s GM 4.3L Vortec • Marine Conversion</p>
+            <p>Oregon Coastal Fishing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cover-footer">
+        <div>Version 1.0<br>May 24, 2026</div>
+        <div class="motto">Build It Right - Document It Forever</div>
+        <div>22' Calkins Bartender</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 2: TABLE OF CONTENTS                                                 -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-2">
+    <div class="page-border">
+      <div class="toc-container">
+        <div class="toc-header-block">Table of Contents</div>
+        <div class="toc-list">
+          
+          <!-- Section 1 -->
+          <div class="toc-section">
+            <a href="#page-1-2" class="toc-item">
+              <span class="toc-item-name">System Overview</span>
+              <span class="toc-item-dots"></span>
+            </a>
+            <div class="toc-sub-list">
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Project Summary</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Primary Mission</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Design Philosophy</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Electrical Architecture</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Engine Monitoring Goals</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-1-2" class="toc-sub-item">
+                <span class="toc-sub-item-name">Frozen Design Decisions</span>
+                <span class="toc-item-dots"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="toc-section">
+            <a href="#page-4" class="toc-item">
+              <span class="toc-item-name">Helm Layout & Design</span>
+              <span class="toc-item-dots"></span>
+            </a>
+            <div class="toc-sub-list">
+              <a href="#page-4" class="toc-sub-item">
+                <span class="toc-sub-item-name">Helm Layout Overview</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-4" class="toc-sub-item">
+                <span class="toc-sub-item-name">Component Placement</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-4" class="toc-sub-item">
+                <span class="toc-sub-item-name">Mounting Details</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-4" class="toc-sub-item">
+                <span class="toc-sub-item-name">Switch Panel Layout</span>
+                <span class="toc-item-dots"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="toc-section">
+            <a href="#page-5" class="toc-item">
+              <span class="toc-item-name">Electrical System</span>
+              <span class="toc-item-dots"></span>
+            </a>
+            <div class="toc-sub-list">
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">Electrical Overview</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">One-Line Diagram</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">Power Distribution</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">Battery System</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">Breaker & Fuse Schedules</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-5" class="toc-sub-item">
+                <span class="toc-sub-item-name">Wire Sizing & Color Codes</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-6" class="toc-sub-item">
+                <span class="toc-sub-item-name">Airmar B175M Installation</span>
+                <span class="toc-item-dots"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section 4 (NMEA 2000 Network) -->
+          <div class="toc-section">
+            <a href="#page-7" class="toc-item">
+              <span class="toc-item-name">NMEA 2000 Network</span>
+              <span class="toc-item-dots"></span>
+            </a>
+            <div class="toc-sub-list">
+              <a href="#page-7" class="toc-sub-item">
+                <span class="toc-sub-item-name">Network Overview</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-7" class="toc-sub-item">
+                <span class="toc-sub-item-name">Backbone Layout</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-7" class="toc-sub-item">
+                <span class="toc-sub-item-name">Drop Cable Schedule</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-7" class="toc-sub-item">
+                <span class="toc-sub-item-name">Device List & Addresses</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-7" class="toc-sub-item">
+                <span class="toc-sub-item-name">Future Expansion</span>
+                <span class="toc-item-dots"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section 5 (Parts List) -->
+          <div class="toc-section">
+            <a href="#page-8" class="toc-item">
+              <span class="toc-item-name">Major Components - Parts List</span>
+              <span class="toc-item-dots"></span>
+            </a>
+          </div>
+
+          <!-- Section 6 (Revision Control) -->
+          <div class="toc-section">
+            <a href="#page-9" class="toc-item">
+              <span class="toc-item-name">Revision Control & Document Info</span>
+              <span class="toc-item-dots"></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 1-2: SYSTEM OVERVIEW CONTENT (DESIGN GOALS)                          -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-1-2">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>System Overview</h1>
+          </div>
+        </div>
+      </header>
+
+      <div class="info-single-col">
+        <div class="info-block">
+          <h2>Project Summary</h2>
+          <p>This document summarizes the agreed design goals for the electronics and electrical system for Randy Dersham's 22-foot Calkins Bartender restoration.</p>
+        </div>
+        
+        <div class="info-block">
+          <h2>Primary Mission</h2>
+          <p>Build a dependable electronics package optimized for the Oregon coast while remaining equally capable on inland lakes such as Odell Lake.</p>
+        </div>
+
+        <div class="info-block">
+          <h2>Design Philosophy</h2>
+          <p>Keep the helm clean and traditional. Retain analog engine instruments for redundancy while adding modern digital capabilities through a Garmin chartplotter and NMEA 2000 network. Freeze major design decisions once approved and build future work from that baseline.</p>
+        </div>
+
+        <div class="info-block">
+          <h2>Electrical Architecture</h2>
+          <p>Separate Engine, Navigation, and House power buses. Use marine-grade wiring, quality circuit protection, and reserve capacity for future radar, heading sensor, and autopilot.</p>
+        </div>
+
+        <div class="info-block">
+          <h2>Engine Monitoring Goals</h2>
+          <p>Display RPM, oil pressure, coolant temperature, battery voltage, fuel level, fuel flow, fuel used, and range on the Garmin. Install independent low-oil-pressure and high-temperature alarms.</p>
+        </div>
+
+        <div class="info-block info-card centered-card">
+          <h2>Frozen Design Decisions</h2>
+          <ul>
+            <li>Garmin GPSMAP 1042xsv chartplotter</li>
+            <li>Airmar B175M 0° tilted-element through-hull transducer</li>
+            <li>ICOM M510BB black-box VHF with CommandMic</li>
+            <li>Dedicated Class B AIS transceiver</li>
+            <li>NMEA 2000 backbone</li>
+            <li>Analog tachometer, oil pressure, water temperature, voltmeter and fuel gauge retained</li>
+            <li>Digital engine monitoring added while preserving analog gauges</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 4: 2.1 HELM LAYOUT OVERVIEW                                          -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-4">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Helm Layout Overview</h1>
+          </div>
+        </div>
+      </header>
+      <div class="helm-container">
+        <div class="helm-image-wrapper">
+          <img src="assets/helm_layout.jpg" alt="Helm Layout Dashboard">
+          
+          <!-- Absolute pins & callout label overlays -->
+          <div class="helm-callout" id="callout-gps">
+            <strong>GARMIN GPSMAP 1042xsv</strong>
+            <span>10" Chartplotter / Sonar Display</span>
+          </div>
+
+          <div class="helm-callout" id="callout-analog">
+            <strong>ANALOG GAUGES</strong>
+            <span>Tachometer, Oil, Temp, Volt, Fuel</span>
+          </div>
+
+          <div class="helm-callout" id="callout-switches">
+            <strong>SWITCH PANEL</strong>
+            <span>Navigation, Bilge, Horn, Accessories</span>
+          </div>
+
+          <div class="helm-callout" id="callout-wheel">
+            <strong>STEERING WHEEL</strong>
+            <span>Traditional wood spokes & metal rim</span>
+          </div>
+
+          <div class="helm-callout" id="callout-icom">
+            <strong>ICOM M510BB</strong>
+            <span>Black Box VHF Radio CommandMic</span>
+          </div>
+
+          <div class="helm-callout" id="callout-throttle">
+            <strong>THROTTLE / SHIFT</strong>
+            <span>Single engine mechanical control</span>
+          </div>
+
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 5: 3.2 ONE-LINE ELECTRICAL DIAGRAM                                  -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-5">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>One-Line Electrical Diagram</h1>
+          </div>
+        </div>
+      </header>
+      <div class="schematic-container">
+        <!-- SVG Vector Schematic matching the reference layout exactly -->
+        <svg class="schematic-svg" viewBox="0 0 600 500">
+          <!-- Definitions for markers and filters -->
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+            </marker>
+          </defs>
+
+          <!-- Top Row: Batteries -->
+          <!-- Engine Start Battery -->
+          <rect x="30" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="2"/>
+          <text x="105" y="65" font-size="10" font-weight="700" fill="#991b1b" text-anchor="middle">ENGINE START</text>
+          <text x="105" y="80" font-size="10" font-weight="700" fill="#991b1b" text-anchor="middle">BATTERY BANK</text>
+          <text x="105" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
+
+          <!-- House Battery -->
+          <rect x="225" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
+          <text x="300" y="65" font-size="10" font-weight="700" fill="#1e3a8a" text-anchor="middle">HOUSE</text>
+          <text x="300" y="80" font-weight="700" font-size="10" fill="#1e3a8a" text-anchor="middle">BATTERY BANK</text>
+          <text x="300" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
+
+          <!-- Navigation Battery -->
+          <rect x="420" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#065f46" stroke-width="2"/>
+          <text x="495" y="65" font-size="10" font-weight="700" fill="#065f46" text-anchor="middle">NAVIGATION BUS</text>
+          <text x="495" y="80" font-weight="700" font-size="10" fill="#065f46" text-anchor="middle">BATTERY BANK</text>
+          <text x="495" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
+
+          <!-- Switches (Circles with rotating levers) -->
+          <!-- Switch 1 -->
+          <circle cx="105" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+          <line x1="105" y1="160" x2="105" y2="145" stroke="#0f172a" stroke-width="3"/>
+          <text x="130" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
+
+          <!-- Switch 2 -->
+          <circle cx="300" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+          <line x1="300" y1="160" x2="310" y2="148" stroke="#0f172a" stroke-width="3"/>
+          <text x="325" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
+
+          <!-- Switch 3 -->
+          <circle cx="495" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+          <line x1="495" y1="160" x2="480" y2="170" stroke="#0f172a" stroke-width="3"/>
+          <text x="520" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
+
+          <!-- Vertical Positive Lines from batteries to switches -->
+          <line x1="105" y1="110" x2="105" y2="142" stroke="#991b1b" stroke-width="2"/>
+          <line x1="300" y1="110" x2="300" y2="142" stroke="#991b1b" stroke-width="2"/>
+          <line x1="495" y1="110" x2="495" y2="142" stroke="#991b1b" stroke-width="2"/>
+
+          <!-- Lower Row: Buses -->
+          <!-- Engine Bus -->
+          <rect x="30" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="2"/>
+          <rect x="30" y="240" width="150" height="25" fill="#991b1b"/>
+          <text x="105" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">ENGINE BUS</text>
+          <text x="105" y="278" font-size="7.5" fill="#ef4444" font-weight="700" text-anchor="middle">(Hot at all times)</text>
+          <text x="40" y="300" font-size="8.5" fill="#334155">• Ignition</text>
+          <text x="40" y="315" font-size="8.5" fill="#334155">• Engine Gauges</text>
+          <text x="40" y="330" font-size="8.5" fill="#334155">• Engine Alarms</text>
+          <text x="40" y="345" font-size="8.5" fill="#334155">• Bilge Pumps</text>
+          <text x="40" y="360" font-size="8.5" fill="#334155">• Engine Room Lights</text>
+
+          <!-- House Bus -->
+          <rect x="225" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
+          <rect x="225" y="240" width="150" height="25" fill="#1e3a8a"/>
+          <text x="300" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">HOUSE BUS</text>
+          <text x="300" y="278" font-size="7.5" fill="#3b82f6" font-weight="700" text-anchor="middle">(Hot at all times)</text>
+          <text x="235" y="300" font-size="8.5" fill="#334155">• Cabin Lights</text>
+          <text x="235" y="315" font-size="8.5" fill="#334155">• Stereo</text>
+          <text x="235" y="330" font-size="8.5" fill="#334155">• Refrigerator</text>
+          <text x="235" y="345" font-size="8.5" fill="#334155">• USB Outlets</text>
+          <text x="235" y="360" font-size="8.5" fill="#334155">• Accessories</text>
+
+          <!-- Navigation Bus -->
+          <rect x="420" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#065f46" stroke-width="2"/>
+          <rect x="420" y="240" width="150" height="25" fill="#065f46"/>
+          <text x="495" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">NAVIGATION BUS</text>
+          <text x="495" y="278" font-size="7.5" fill="#10b981" font-weight="700" text-anchor="middle">(Hot at all times)</text>
+          <text x="430" y="300" font-size="8.5" fill="#334155">• GPS / Chartplotter</text>
+          <text x="430" y="315" font-size="8.5" fill="#334155">• VHF Radio</text>
+          <text x="430" y="330" font-size="8.5" fill="#334155">• AIS Transceiver</text>
+          <text x="430" y="345" font-size="8.5" fill="#334155">• NMEA 2000 Net</text>
+          <text x="430" y="360" font-size="8.5" fill="#334155">• Radar (Future)</text>
+
+          <!-- Lines from Switches to Buses -->
+          <line x1="105" y1="178" x2="105" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="300" y1="178" x2="300" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="495" y1="178" x2="495" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Common Negative Bus -->
+          <rect x="180" y="430" width="240" height="30" rx="2" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+          <text x="300" y="448" font-size="9" font-weight="700" fill="#0f172a" text-anchor="middle">COMMON NEGATIVE BUS (DC GROUND)</text>
+
+          <!-- Negative lines from buses/batteries to Negative Bus -->
+          <!-- Main Ground Connections -->
+          <line x1="105" y1="390" x2="105" y2="415" stroke="#475569" stroke-width="1.5"/>
+          <line x1="105" y1="415" x2="200" y2="415" stroke="#475569" stroke-width="1.5"/>
+          <line x1="200" y1="415" x2="200" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+          <line x1="300" y1="390" x2="300" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+          <line x1="495" y1="390" x2="495" y2="415" stroke="#475569" stroke-width="1.5"/>
+          <line x1="495" y1="415" x2="400" y2="415" stroke="#475569" stroke-width="1.5"/>
+          <line x1="400" y1="415" x2="400" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+          <!-- Earth Ground Symbol -->
+          <line x1="300" y1="460" x2="300" y2="480" stroke="#0f172a" stroke-width="2"/>
+          <line x1="290" y1="480" x2="310" y2="480" stroke="#0f172a" stroke-width="2"/>
+          <line x1="294" y1="484" x2="306" y2="484" stroke="#0f172a" stroke-width="2"/>
+          <line x1="298" y1="488" x2="302" y2="488" stroke="#0f172a" stroke-width="2"/>
+        </svg>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 6: 6.2 AIRMAR B175M INSTALLATION                                     -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-6">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Airmar B175M Installation</h1>
+          </div>
+        </div>
+      </header>
+      <div class="transducer-split">
+        <div class="transducer-image-wrapper">
+          <img src="assets/transducer_installation.jpg" alt="Airmar Transducer Thru-Hull Installation">
+        </div>
+        <div class="transducer-notes">
+          <h3>Installation Notes</h3>
+          <ol>
+            <li>Install in a solid laminate area near the keel line. Avoid areas with air bubbles, water flow turbulence, or directly behind hull steps.</li>
+            <li>Ensure the path inside the hull is clear of any stringers, bulkheads, or electrical wiring.</li>
+            <li>Apply a generous bead of high-quality marine sealant (e.g., 3M 4200 or 5200) to both the transducer flange and the hull opening.</li>
+            <li>Do not over-tighten the bronze locking nut, as this can damage the mahogany hull structure or strip the threads.</li>
+            <li>Torque the lock nut to 25–30 ft-lbs using a custom spanner wrench or large adjustable wrench.</li>
+            <li>Verify correct transducer tilt angle (e.g., 0°, 12°, or 20° version matches deadrise) before tightening.</li>
+          </ol>
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 7: 4.2 NMEA 2000 BACKBONE LAYOUT                                     -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-7">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>NMEA 2000 Backbone Layout</h1>
+          </div>
+        </div>
+      </header>
+      <div class="nmea-container">
+        <!-- SVG NMEA 2000 Network Layout -->
+        <svg viewBox="0 0 600 450" style="width: 100%; height: 100%; max-height: 8in;">
+          <!-- Legend Box -->
+          <rect x="25" y="320" width="160" height="100" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+          <text x="35" y="338" font-size="9.5" font-weight="700" fill="#0f172a">LEGEND</text>
+          
+          <line x1="35" y1="355" x2="65" y2="355" stroke="#b45309" stroke-width="3.5"/>
+          <text x="75" y="358" font-size="8" fill="#334155">Backbone Cable</text>
+
+          <line x1="35" y1="375" x2="65" y2="375" stroke="#0284c7" stroke-width="2" stroke-dasharray="2,2"/>
+          <text x="75" y="378" font-size="8" fill="#334155">Drop Cable (Max 6m)</text>
+
+          <rect x="42" y="390" width="10" height="12" fill="#0f172a"/>
+          <text x="75" y="400" font-size="8" fill="#334155">T-Connector</text>
+
+          <circle cx="47" cy="412" r="5" fill="#ef4444"/>
+          <text x="75" y="415" font-size="8" fill="#334155">Terminator (120 Ohm)</text>
+
+          <!-- NMEA Backbone Main Line -->
+          <line x1="80" y1="200" x2="520" y2="200" stroke="#b45309" stroke-width="4"/>
+          
+          <!-- Terminators -->
+          <circle cx="80" cy="200" r="7" fill="#ef4444"/>
+          <text x="65" y="185" font-size="8" font-weight="700" fill="#ef4444" text-anchor="middle">TERM (M)</text>
+          
+          <circle cx="520" cy="200" r="7" fill="#ef4444"/>
+          <text x="535" y="185" font-size="8" font-weight="700" fill="#ef4444" text-anchor="middle">TERM (F)</text>
+
+          <!-- T-Connectors -->
+          <!-- T1 -->
+          <rect x="145" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="151" y1="200" x2="151" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: Garmin GPSMAP -->
+          <rect x="111" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <rect x="111" y="70" width="80" height="12" fill="#0f172a"/>
+          <text x="151" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">GARMIN 1042xsv</text>
+          <text x="151" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Chartplotter</text>
+
+          <!-- T2 -->
+          <rect x="235" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="241" y1="200" x2="241" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: ICOM Radio -->
+          <rect x="201" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <rect x="201" y="70" width="80" height="12" fill="#0f172a"/>
+          <text x="241" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">ICOM M510BB</text>
+          <text x="241" y="98" font-size="7.5" fill="#475569" text-anchor="middle">VHF Radio</text>
+
+          <!-- T3 -->
+          <rect x="325" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="331" y1="200" x2="331" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: em-trak AIS -->
+          <rect x="291" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <rect x="291" y="70" width="80" height="12" fill="#0f172a"/>
+          <text x="331" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">EM-TRAK B953</text>
+          <text x="331" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Class B AIS</text>
+
+          <!-- T4 -->
+          <rect x="415" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="421" y1="200" x2="421" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: Engine Gateway -->
+          <rect x="381" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <rect x="381" y="70" width="80" height="12" fill="#0f172a"/>
+          <text x="421" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">ACTISENSE EMU-1</text>
+          <text x="421" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Engine Gateway</text>
+
+          <!-- T5 (Bottom Drop) -->
+          <rect x="180" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="186" y1="200" x2="186" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: Fuel Flow Sensor -->
+          <circle cx="186" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <text x="186" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">FUEL</text>
+          <text x="186" y="325" font-size="7.5" fill="#475569" text-anchor="middle">Flow Sensor</text>
+
+          <!-- T6 (Bottom Drop) -->
+          <rect x="290" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="296" y1="200" x2="296" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: Fuel Level Sensor -->
+          <circle cx="296" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <text x="296" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">LEVEL</text>
+          <text x="296" y="325" font-size="7.5" fill="#475569" text-anchor="middle">Tank Sender</text>
+
+          <!-- T7 (Bottom Drop) -->
+          <rect x="400" y="194" width="12" height="12" fill="#0f172a"/>
+          <line x1="406" y1="200" x2="406" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
+          <!-- Device: Heading Sensor -->
+          <circle cx="406" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+          <text x="406" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">HEADING</text>
+          <text x="406" y="325" font-size="7.5" fill="#475569" text-anchor="middle">9-Axis Compass</text>
+
+        </svg>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 8: 9.1 MAJOR COMPONENTS - PARTS LIST                                -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-8">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Major Components - Parts List</h1>
+          </div>
+        </div>
+      </header>
+      <div class="manual-table-container">
+        <table class="manual-table">
+          <thead>
+            <tr>
+              <th style="width: 8%;">Item</th>
+              <th style="width: 8%;">Qty</th>
+              <th style="width: 20%;">Part Number</th>
+              <th style="width: 44%;">Description</th>
+              <th style="width: 20%;">Mfg / Brand</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.1</td>
+              <td>1</td>
+              <td>010-02683-00</td>
+              <td>Garmin GPSMAP 1042xsv, 10" Chartplotter / Sonar Combo</td>
+              <td>Garmin</td>
+            </tr>
+            <tr>
+              <td>1.2</td>
+              <td>1</td>
+              <td>010-12735-20</td>
+              <td>Airmar B175M Bronze Thru-Hull Transducer (85-135 kHz, 0° Tilt)</td>
+              <td>Airmar</td>
+            </tr>
+            <tr>
+              <td>1.3</td>
+              <td>1</td>
+              <td>M510BB</td>
+              <td>ICOM M510BB Black Box VHF Radio Base Unit</td>
+              <td>ICOM</td>
+            </tr>
+            <tr>
+              <td>1.4</td>
+              <td>1</td>
+              <td>HM-235B</td>
+              <td>ICOM CommandMic IV Remote Handset (for M510BB)</td>
+              <td>ICOM</td>
+            </tr>
+            <tr>
+              <td>1.5</td>
+              <td>1</td>
+              <td>B953-05-AIS</td>
+              <td>em-trak B953 Class B AIS Transceiver (5W SOTDMA, internal splitter)</td>
+              <td>em-trak</td>
+            </tr>
+            <tr>
+              <td>1.6</td>
+              <td>1</td>
+              <td>ANT-SPLIT-V2</td>
+              <td>VHF/AIS/FM Antenna Splitter (Low insertion loss)</td>
+              <td>Shakespeare</td>
+            </tr>
+            <tr>
+              <td>1.7</td>
+              <td>1</td>
+              <td>010-02309-00</td>
+              <td>NMEA 2000 Starter Kit (10m backbone, drop cables, power tap)</td>
+              <td>Garmin</td>
+            </tr>
+            <tr>
+              <td>1.8</td>
+              <td>10</td>
+              <td>010-11085-00</td>
+              <td>NMEA 2000 T-Connector (Micro-C style)</td>
+              <td>Garmin</td>
+            </tr>
+            <tr>
+              <td>1.9</td>
+              <td>2</td>
+              <td>010-11080-00</td>
+              <td>NMEA 2000 Terminators (1 Male, 1 Female)</td>
+              <td>Garmin</td>
+            </tr>
+            <tr>
+              <td>1.10</td>
+              <td>1</td>
+              <td>010-11089-00</td>
+              <td>NMEA 2000 Power Cable (Fused drop connection)</td>
+              <td>Garmin</td>
+            </tr>
+            <tr>
+              <td>1.11</td>
+              <td>1</td>
+              <td>16307</td>
+              <td>Fuel Flow Sensor (In-line turbine, 0.5–30 GPH)</td>
+              <td>Moeller</td>
+            </tr>
+            <tr>
+              <td>1.12</td>
+              <td>1</td>
+              <td>32648</td>
+              <td>Fuel Tank Sending Unit (Reed switch type, 240–33 Ohm)</td>
+              <td>Moeller</td>
+            </tr>
+            <tr>
+              <td>1.13</td>
+              <td>1</td>
+              <td>EMU-1</td>
+              <td>Actisense Engine Monitoring Unit (Analog-to-N2K Gateway)</td>
+              <td>Actisense</td>
+            </tr>
+            <tr>
+              <td>1.14</td>
+              <td>1</td>
+              <td>5023</td>
+              <td>VDO Oil Pressure Sender (0–80 PSI, 10–180 Ohm)</td>
+              <td>VDO</td>
+            </tr>
+            <tr>
+              <td>1.15</td>
+              <td>1</td>
+              <td>323-801</td>
+              <td>VDO Water Temperature Sender (100–250°F)</td>
+              <td>VDO</td>
+            </tr>
+            <tr>
+              <td>1.16</td>
+              <td>1</td>
+              <td>2141</td>
+              <td>Blue Sea Systems Voltage Sense Module (for automatic charging)</td>
+              <td>Blue Sea</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer class="section-footer">
+        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 9: REVISION CONTROL & DOCUMENT INFORMATION                           -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-9">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Revision Control & Document Info</h1>
+          </div>
+        </div>
+      </header>
+      <div class="manual-table-container" style="justify-content: flex-start; gap: 20px;">
+        
+        <!-- Revision Control Table -->
+        <table class="manual-table">
+          <thead>
+            <tr>
+              <th style="width: 10%;">Rev</th>
+              <th style="width: 15%;">Date</th>
+              <th style="width: 45%;">Description of Change</th>
+              <th style="width: 15%;">Pages Affected</th>
+              <th style="width: 15%;">By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.0</td>
+              <td>05/24/26</td>
+              <td>Initial Release of Electronics & Electrical System Manual</td>
+              <td>All</td>
+              <td>Lead Tech</td>
+            </tr>
+            <tr>
+              <td>1.1</td>
+              <td>06/01/26</td>
+              <td>Added fuel management sensor details and updated wiring schematics</td>
+              <td>3-8, 3-9, 5-4, 5-5</td>
+              <td>Lead Tech</td>
+            </tr>
+            <tr>
+              <td>1.2</td>
+              <td>06/05/26</td>
+              <td>Added engine alarm circuits and updated BOM parts pricing</td>
+              <td>5-6, 9-2 to 9-8</td>
+              <td>Lead Tech</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Document Information Block -->
+        <div class="doc-info-block">
+          <div class="doc-info-title">Document Information</div>
+          <div class="doc-info-grid">
+            <div class="doc-info-item"><strong>Document Title:</strong> Calkins Bartender Electronics & Electrical System Manual</div>
+            <div class="doc-info-item"><strong>Document Number:</strong> CB-ELC-MAN-001</div>
+            <div class="doc-info-item"><strong>Current Revision:</strong> 1.2</div>
+            <div class="doc-info-item"><strong>Date:</strong> June 5, 2026</div>
+          </div>
+          <div class="notes-bottom">
+            NOTE: This document is a living manual. Updates and modifications should be recorded above, and all affected pages updated accordingly.
+          </div>
+        </div>
+
+      </div>
+      <footer class="section-footer">
+        <span>Calkins Bartender Electronics Manual</span>
+        <span class="page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>

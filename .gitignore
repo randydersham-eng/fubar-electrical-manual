@@ -1,0 +1,11 @@
+# Python virtualenv and cache
+venv/
+__pycache__/
+*.pyc
+
+# PDF output
+*.pdf
+output/
+
+# macOS system files
+.DS_Store
