@@ -55,33 +55,18 @@ source venv/bin/activate
 python3 build.py
 ```
 The compiled PDF will be output to:
-`output/installation_manual.pdf`
+`output/FUBAR electrical manual.pdf`
 
 ---
 
 ## Synchronizing Across iMac & MacBook (GitHub)
 
-We will use a private GitHub repository to keep both computers synchronized.
-
-### First-Time Git Setup (Run on this computer)
-1. Initialize the local repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of manual skeleton and assets"
-   ```
-2. Create a new **Private** repository on [github.com](https://github.com) named `calkins-bartender-manual`.
-3. Add the GitHub remote and push your files:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/calkins-bartender-manual.git
-   git push -u origin main
-   ```
+We use a private GitHub repository named **`fubar-electrical-manual`** to keep both computers synchronized.
 
 ### Accessing & Editing on Your Second Computer
-1. Clone the repository onto your second computer:
+1. Open terminal on your second computer and clone the repository:
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/calkins-bartender-manual.git
+   git clone https://github.com/YOUR_GITHUB_USERNAME/fubar-electrical-manual.git
    ```
 2. Set up the local python virtual environment and run the build script (following the **Getting Started** guide above).
 
@@ -96,3 +81,18 @@ git add .
 git commit -m "Update manual content"
 git push
 ```
+
+---
+
+## Pairing with Antigravity
+
+Antigravity is designed to seamlessly pair program with you on this repository. To resume work on your second computer:
+
+1. **Open the Project in Antigravity**:
+   * Open the Antigravity workspace or editor on your second computer.
+   * Load the `fubar-electrical-manual` folder you cloned from GitHub.
+   * If you are in the Antigravity chat, set this project directory as your **active workspace**.
+2. **Resume the Task**:
+   * You can simply prompt Antigravity to get started. For example:
+     > *"Hi Antigravity, I've loaded the project on my MacBook. Let's verify the PDF compile by running build.py, and let's review the parts list."*
+   * Antigravity will automatically inspect your folder, run the build compiler on your command, and edit files as you direct.
