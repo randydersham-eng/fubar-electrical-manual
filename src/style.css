@@ -132,6 +132,21 @@ footer.section-footer {
   padding-top: 6px;
 }
 
+footer.section-footer .footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+footer.section-footer .footer-center {
+  flex: 2;
+  text-align: center;
+}
+
+footer.section-footer .footer-right {
+  flex: 1;
+  text-align: right;
+}
+
 footer.section-footer .page-num {
   font-weight: 700;
   color: #0f172a;
@@ -574,45 +589,53 @@ footer.section-footer .page-num::after {
   height: 100%;
 }
 
-.schematic-svg {
+.schematic-svg, .schematic-img {
   width: 100%;
-  height: 100%;
-  max-height: 8.5in;
+  height: auto;
+  max-height: 7.8in;
+  object-fit: contain;
 }
 
 /* PAGE 6: TRANSDUCER INSTALLATION */
 .transducer-split {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 15px;
-  height: 100%;
+  height: 6.4in;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .transducer-image-wrapper {
+  width: 43%;
   border: 1px solid #cbd5e1;
   background-color: #fff;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5.5in;
+  height: 100%;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .transducer-image-wrapper img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
 .transducer-notes {
+  width: 54%;
   display: flex;
   flex-direction: column;
   background-color: #f8fafc;
   border: 1px solid #cbd5e1;
-  padding: 15px;
+  padding: 12px 15px;
   border-radius: 4px;
-  height: 5.5in;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .transducer-notes h3 {
@@ -622,20 +645,20 @@ footer.section-footer .page-num::after {
   color: #0f172a;
   border-bottom: 1.5px solid #b45309;
   padding-bottom: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .transducer-notes ol {
   padding-left: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .transducer-notes li {
-  font-size: 8pt;
+  font-size: 7.5pt;
   color: #334155;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* PAGE 7: NMEA 2000 LAYOUT */
@@ -644,6 +667,13 @@ footer.section-footer .page-num::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nmea-img {
+  width: 100%;
+  height: auto;
+  max-height: 7.8in;
+  object-fit: contain;
 }
 
 /* PAGE 8 & 9: TABLES & FORMS */
@@ -874,6 +904,79 @@ footer.section-footer .page-num::after {
 .centered-card ul {
   display: inline-block;
   text-align: left; /* Keep bullet text left-aligned inside the centered block */
+}
+
+/* Phased Installation Page Styles */
+.phase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.phase-card {
+  background-color: #f8fafc;
+  border-left: 3.5px solid #1e3a8a;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.phase-card h3 {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 2px 0;
+  text-transform: uppercase;
+}
+
+.phase-objective {
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.phase-list {
+  list-style-type: square;
+  padding-left: 14px;
+  margin: 0 0 4px 0;
+}
+
+.phase-list li {
+  font-size: 7.2pt;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.phase-milestone {
+  font-size: 7pt;
+  font-weight: 700;
+  color: #047857; /* green for milestone achieved */
+  background-color: #ecfdf5;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* Compact NMEA Diagram on Text Page 8 */
+.nmea-container-compact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.nmea-img-compact {
+  width: 100%;
+  height: auto;
+  max-height: 4.2in;
+  object-fit: contain;
 }
 
 

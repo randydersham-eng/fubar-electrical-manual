@@ -129,7 +129,11 @@
                 <span class="toc-item-dots"></span>
               </a>
               <a href="#page-5" class="toc-sub-item">
-                <span class="toc-sub-item-name">One-Line Diagram</span>
+                <span class="toc-sub-item-name">Single-Line Diagram</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-phased" class="toc-sub-item">
+                <span class="toc-sub-item-name">Phased Installation of Electronics</span>
                 <span class="toc-item-dots"></span>
               </a>
               <a href="#page-5" class="toc-sub-item">
@@ -157,11 +161,15 @@
 
           <!-- Section 4 (NMEA 2000 Network) -->
           <div class="toc-section">
-            <a href="#page-7" class="toc-item">
+            <a href="#page-nmea-data-flow" class="toc-item">
               <span class="toc-item-name">NMEA 2000 Network</span>
               <span class="toc-item-dots"></span>
             </a>
             <div class="toc-sub-list">
+              <a href="#page-nmea-data-flow" class="toc-sub-item">
+                <span class="toc-sub-item-name">Network Data Flow</span>
+                <span class="toc-item-dots"></span>
+              </a>
               <a href="#page-7" class="toc-sub-item">
                 <span class="toc-sub-item-name">Network Overview</span>
                 <span class="toc-item-dots"></span>
@@ -170,16 +178,20 @@
                 <span class="toc-sub-item-name">Backbone Layout</span>
                 <span class="toc-item-dots"></span>
               </a>
-              <a href="#page-7" class="toc-sub-item">
+              <a href="#page-7-devices" class="toc-sub-item">
                 <span class="toc-sub-item-name">Drop Cable Schedule</span>
                 <span class="toc-item-dots"></span>
               </a>
-              <a href="#page-7" class="toc-sub-item">
+              <a href="#page-7-devices" class="toc-sub-item">
                 <span class="toc-sub-item-name">Device List & Addresses</span>
                 <span class="toc-item-dots"></span>
               </a>
-              <a href="#page-7" class="toc-sub-item">
+              <a href="#page-7-devices" class="toc-sub-item">
                 <span class="toc-sub-item-name">Future Expansion</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-engine-integration" class="toc-sub-item">
+                <span class="toc-sub-item-name">Engine & Fuel Integration</span>
                 <span class="toc-item-dots"></span>
               </a>
             </div>
@@ -188,9 +200,19 @@
           <!-- Section 5 (Parts List) -->
           <div class="toc-section">
             <a href="#page-8" class="toc-item">
-              <span class="toc-item-name">Major Components - Parts List</span>
+              <span class="toc-item-name">Parts List & Purchasing</span>
               <span class="toc-item-dots"></span>
             </a>
+            <div class="toc-sub-list">
+              <a href="#page-8" class="toc-sub-item">
+                <span class="toc-sub-item-name">Major Components Parts List</span>
+                <span class="toc-item-dots"></span>
+              </a>
+              <a href="#page-phased-purchasing" class="toc-sub-item">
+                <span class="toc-sub-item-name">Phased Purchasing Parts List</span>
+                <span class="toc-item-dots"></span>
+              </a>
+            </div>
           </div>
 
           <!-- Section 6 (Revision Control) -->
@@ -204,8 +226,9 @@
         </div>
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
@@ -228,7 +251,7 @@
       <div class="info-single-col">
         <div class="info-block">
           <h2>Project Summary</h2>
-          <p>This document summarizes the agreed design goals for the electronics and electrical system for Randy Dersham's 22-foot Calkins Bartender restoration.</p>
+          <p>This document defines the complete electrical and electronics system for F.U.B.A.R., a 22-foot Calkins Bartender restoration. It serves as the master reference for system planning, design, installation, testing, documentation, operation, troubleshooting, and future maintenance.</p>
         </div>
         
         <div class="info-block">
@@ -243,7 +266,7 @@
 
         <div class="info-block">
           <h2>Electrical Architecture</h2>
-          <p>Separate Engine, Navigation, and House power buses. Use marine-grade wiring, quality circuit protection, and reserve capacity for future radar, heading sensor, and autopilot.</p>
+          <p>Separate Engine and House power buses, and charge from smart battery isolators when using shore power or the alternator while under way. Use marine-grade wiring, quality circuit protection, and reserve capacity to supply potential future radar, heading sensor,and autopilot.</p>
         </div>
 
         <div class="info-block">
@@ -254,7 +277,7 @@
         <div class="info-block info-card centered-card">
           <h2>Frozen Design Decisions</h2>
           <ul>
-            <li>Garmin GPSMAP 1042xsv chartplotter</li>
+            <li>Garmin GPSMAP 942xsv chartplotter</li>
             <li>Airmar B175M 0° tilted-element through-hull transducer</li>
             <li>ICOM M510BB black-box VHF with CommandMic</li>
             <li>Dedicated Class B AIS transceiver</li>
@@ -266,8 +289,9 @@
       </div>
 
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
@@ -324,8 +348,9 @@
         </div>
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
@@ -341,128 +366,108 @@
           <div class="header-left">
             <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
             <span class="header-divider">|</span>
-            <h1>One-Line Electrical Diagram</h1>
+            <h1>Single-Line Electrical Diagram</h1>
           </div>
         </div>
       </header>
       <div class="schematic-container">
-        <!-- SVG Vector Schematic matching the reference layout exactly -->
-        <svg class="schematic-svg" viewBox="0 0 600 500">
-          <!-- Definitions for markers and filters -->
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
-            </marker>
-          </defs>
-
-          <!-- Top Row: Batteries -->
-          <!-- Engine Start Battery -->
-          <rect x="30" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="2"/>
-          <text x="105" y="65" font-size="10" font-weight="700" fill="#991b1b" text-anchor="middle">ENGINE START</text>
-          <text x="105" y="80" font-size="10" font-weight="700" fill="#991b1b" text-anchor="middle">BATTERY BANK</text>
-          <text x="105" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
-
-          <!-- House Battery -->
-          <rect x="225" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
-          <text x="300" y="65" font-size="10" font-weight="700" fill="#1e3a8a" text-anchor="middle">HOUSE</text>
-          <text x="300" y="80" font-weight="700" font-size="10" fill="#1e3a8a" text-anchor="middle">BATTERY BANK</text>
-          <text x="300" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
-
-          <!-- Navigation Battery -->
-          <rect x="420" y="40" width="150" height="70" rx="4" fill="#ffffff" stroke="#065f46" stroke-width="2"/>
-          <text x="495" y="65" font-size="10" font-weight="700" fill="#065f46" text-anchor="middle">NAVIGATION BUS</text>
-          <text x="495" y="80" font-weight="700" font-size="10" fill="#065f46" text-anchor="middle">BATTERY BANK</text>
-          <text x="495" y="95" font-size="8" fill="#475569" text-anchor="middle">(24/27 SERIES)</text>
-
-          <!-- Switches (Circles with rotating levers) -->
-          <!-- Switch 1 -->
-          <circle cx="105" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
-          <line x1="105" y1="160" x2="105" y2="145" stroke="#0f172a" stroke-width="3"/>
-          <text x="130" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
-
-          <!-- Switch 2 -->
-          <circle cx="300" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
-          <line x1="300" y1="160" x2="310" y2="148" stroke="#0f172a" stroke-width="3"/>
-          <text x="325" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
-
-          <!-- Switch 3 -->
-          <circle cx="495" cy="160" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
-          <line x1="495" y1="160" x2="480" y2="170" stroke="#0f172a" stroke-width="3"/>
-          <text x="520" y="163" font-size="8" font-weight="700" fill="#0f172a">BATTERY SWITCH</text>
-
-          <!-- Vertical Positive Lines from batteries to switches -->
-          <line x1="105" y1="110" x2="105" y2="142" stroke="#991b1b" stroke-width="2"/>
-          <line x1="300" y1="110" x2="300" y2="142" stroke="#991b1b" stroke-width="2"/>
-          <line x1="495" y1="110" x2="495" y2="142" stroke="#991b1b" stroke-width="2"/>
-
-          <!-- Lower Row: Buses -->
-          <!-- Engine Bus -->
-          <rect x="30" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#991b1b" stroke-width="2"/>
-          <rect x="30" y="240" width="150" height="25" fill="#991b1b"/>
-          <text x="105" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">ENGINE BUS</text>
-          <text x="105" y="278" font-size="7.5" fill="#ef4444" font-weight="700" text-anchor="middle">(Hot at all times)</text>
-          <text x="40" y="300" font-size="8.5" fill="#334155">• Ignition</text>
-          <text x="40" y="315" font-size="8.5" fill="#334155">• Engine Gauges</text>
-          <text x="40" y="330" font-size="8.5" fill="#334155">• Engine Alarms</text>
-          <text x="40" y="345" font-size="8.5" fill="#334155">• Bilge Pumps</text>
-          <text x="40" y="360" font-size="8.5" fill="#334155">• Engine Room Lights</text>
-
-          <!-- House Bus -->
-          <rect x="225" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
-          <rect x="225" y="240" width="150" height="25" fill="#1e3a8a"/>
-          <text x="300" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">HOUSE BUS</text>
-          <text x="300" y="278" font-size="7.5" fill="#3b82f6" font-weight="700" text-anchor="middle">(Hot at all times)</text>
-          <text x="235" y="300" font-size="8.5" fill="#334155">• Cabin Lights</text>
-          <text x="235" y="315" font-size="8.5" fill="#334155">• Stereo</text>
-          <text x="235" y="330" font-size="8.5" fill="#334155">• Refrigerator</text>
-          <text x="235" y="345" font-size="8.5" fill="#334155">• USB Outlets</text>
-          <text x="235" y="360" font-size="8.5" fill="#334155">• Accessories</text>
-
-          <!-- Navigation Bus -->
-          <rect x="420" y="240" width="150" height="150" rx="4" fill="#ffffff" stroke="#065f46" stroke-width="2"/>
-          <rect x="420" y="240" width="150" height="25" fill="#065f46"/>
-          <text x="495" y="256" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">NAVIGATION BUS</text>
-          <text x="495" y="278" font-size="7.5" fill="#10b981" font-weight="700" text-anchor="middle">(Hot at all times)</text>
-          <text x="430" y="300" font-size="8.5" fill="#334155">• GPS / Chartplotter</text>
-          <text x="430" y="315" font-size="8.5" fill="#334155">• VHF Radio</text>
-          <text x="430" y="330" font-size="8.5" fill="#334155">• AIS Transceiver</text>
-          <text x="430" y="345" font-size="8.5" fill="#334155">• NMEA 2000 Net</text>
-          <text x="430" y="360" font-size="8.5" fill="#334155">• Radar (Future)</text>
-
-          <!-- Lines from Switches to Buses -->
-          <line x1="105" y1="178" x2="105" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
-          <line x1="300" y1="178" x2="300" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
-          <line x1="495" y1="178" x2="495" y2="240" stroke="#991b1b" stroke-width="2" marker-end="url(#arrow)"/>
-
-          <!-- Common Negative Bus -->
-          <rect x="180" y="430" width="240" height="30" rx="2" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
-          <text x="300" y="448" font-size="9" font-weight="700" fill="#0f172a" text-anchor="middle">COMMON NEGATIVE BUS (DC GROUND)</text>
-
-          <!-- Negative lines from buses/batteries to Negative Bus -->
-          <!-- Main Ground Connections -->
-          <line x1="105" y1="390" x2="105" y2="415" stroke="#475569" stroke-width="1.5"/>
-          <line x1="105" y1="415" x2="200" y2="415" stroke="#475569" stroke-width="1.5"/>
-          <line x1="200" y1="415" x2="200" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-          <line x1="300" y1="390" x2="300" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-          <line x1="495" y1="390" x2="495" y2="415" stroke="#475569" stroke-width="1.5"/>
-          <line x1="495" y1="415" x2="400" y2="415" stroke="#475569" stroke-width="1.5"/>
-          <line x1="400" y1="415" x2="400" y2="430" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-          <!-- Earth Ground Symbol -->
-          <line x1="300" y1="460" x2="300" y2="480" stroke="#0f172a" stroke-width="2"/>
-          <line x1="290" y1="480" x2="310" y2="480" stroke="#0f172a" stroke-width="2"/>
-          <line x1="294" y1="484" x2="306" y2="484" stroke="#0f172a" stroke-width="2"/>
-          <line x1="298" y1="488" x2="302" y2="488" stroke="#0f172a" stroke-width="2"/>
-        </svg>
+        <img class="schematic-img" src="assets/single_line_diagram.png" alt="F.U.B.A.R. Electrical System Single-Line Diagram">
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 6: PHASED INSTALLATION OF ELECTRONICS                                -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-phased">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Phased Installation of Electronics</h1>
+          </div>
+        </div>
+      </header>
+
+      <div class="phase-container">
+        <div class="phase-card">
+          <h3>Phase 1 – Essential Vessel Systems</h3>
+          <div class="phase-objective">Objective: Make the boat electrically safe and operational.</div>
+          <ul class="phase-list">
+            <li>Install battery system and battery switch.</li>
+            <li>Install DC power distribution.</li>
+            <li>Install navigation, anchor, courtesy, and cabin lighting.</li>
+            <li>Install bilge pump circuits.</li>
+            <li>Install USB and 12-volt accessory outlets.</li>
+          </ul>
+          <div class="phase-milestone">Milestone: The boat is electrically safe, protected, and capable of basic operation.</div>
+        </div>
+
+        <div class="phase-card">
+          <h3>Phase 2 – Helm & Navigation</h3>
+          <div class="phase-objective">Objective: Create a functional helm for safe vessel operation.</div>
+          <ul class="phase-list">
+            <li>Install helm layout and instrument panel.</li>
+            <li>Install Garmin GPSMAP 942xsv chartplotter.</li>
+            <li>Install NMEA 2000 backbone.</li>
+            <li>Install engine monitoring interface and sensors.</li>
+            <li>Verify engine data is displayed correctly on the chartplotter.</li>
+          </ul>
+          <div class="phase-milestone">Milestone: The vessel can be safely navigated using GPS while continuously monitoring engine health.</div>
+        </div>
+
+        <div class="phase-card">
+          <h3>Phase 3 – Communications</h3>
+          <div class="phase-objective">Objective: Provide VHF communication capability.</div>
+          <ul class="phase-list">
+            <li>Install ICOM M510BB black-box VHF radio.</li>
+            <li>Install ICOM HM-195GB CommandMic.</li>
+            <li>Verify DSC and NMEA 2000 communications.</li>
+          </ul>
+          <div class="phase-milestone">Milestone: The vessel can communicate with other vessels and shore stations.</div>
+        </div>
+
+        <div class="phase-card">
+          <h3>Phase 4 – Commissioning</h3>
+          <div class="phase-objective">Objective: Validate the complete electrical system.</div>
+          <ul class="phase-list">
+            <li>Verify all electrical circuits.</li>
+            <li>Verify battery charging from the alternator and shore charger.</li>
+            <li>Verify NMEA 2000 network integrity.</li>
+            <li>Conduct dockside testing.</li>
+            <li>Conduct sea trials.</li>
+            <li>Correct deficiencies.</li>
+          </ul>
+          <div class="phase-milestone">Milestone: The electrical and electronics systems are fully commissioned and ready for regular operation.</div>
+        </div>
+
+        <div class="phase-card">
+          <h3>Phase 5 – Future Enhancements</h3>
+          <div class="phase-objective">Objective: Expand system capabilities.</div>
+          <ul class="phase-list">
+            <li>Install Garmin AIS 800 transceiver (collision avoidance).</li>
+            <li>Install Garmin GMR 18 xHD3 radar.</li>
+            <li>Verify AIS targets and radar overlay functions on chartplotter.</li>
+          </ul>
+          <div class="phase-milestone">Milestone: Full navigation and situational awareness suite complete.</div>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
 
   <!-- ========================================================================= -->
   <!-- PAGE 6: 6.2 AIRMAR B175M INSTALLATION                                     -->
@@ -478,29 +483,129 @@
           </div>
         </div>
       </header>
-      <div class="transducer-split">
-        <div class="transducer-image-wrapper">
-          <img src="assets/transducer_installation.jpg" alt="Airmar Transducer Thru-Hull Installation">
-        </div>
-        <div class="transducer-notes">
-          <h3>Installation Notes</h3>
-          <ol>
+      <div class="info-single-col" style="gap: 20px;">
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Installation Notes</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8.5pt; line-height: 1.5; color: #334155; margin-bottom: 0;">
             <li>Install in a solid laminate area near the keel line. Avoid areas with air bubbles, water flow turbulence, or directly behind hull steps.</li>
             <li>Ensure the path inside the hull is clear of any stringers, bulkheads, or electrical wiring.</li>
             <li>Apply a generous bead of high-quality marine sealant (e.g., 3M 4200 or 5200) to both the transducer flange and the hull opening.</li>
             <li>Do not over-tighten the bronze locking nut, as this can damage the mahogany hull structure or strip the threads.</li>
             <li>Torque the lock nut to 25–30 ft-lbs using a custom spanner wrench or large adjustable wrench.</li>
             <li>Verify correct transducer tilt angle (e.g., 0°, 12°, or 20° version matches deadrise) before tightening.</li>
-          </ol>
+            <li>Connect the Airmar B175M CHIRP Transducer directly to the Garmin GPSMAP 942xsv using the transducer cable. The transducer is not an NMEA 2000 device and does not connect to the NMEA 2000 backbone. The chartplotter processes the sonar data and can share depth information with other compatible devices over the NMEA 2000 network.</li>
+          </ul>
+        </div>
+
+        <div class="nmea-container-compact" style="margin-top: 10px;">
+          <img class="nmea-img-compact" src="assets/transducer_installation.jpg" alt="Airmar Transducer Thru-Hull Installation" style="max-height: 5.0in;">
         </div>
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
 
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 9: NMEA 2000 NETWORK DATA FLOW                                       -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-nmea-data-flow">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>NMEA 2000 Network Data Flow</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 20px;">
+        <div class="info-block">
+          <p style="font-size: 8.5pt; line-height: 1.5; color: #334155; margin-bottom: 0;">The NMEA 2000 network allows all compatible devices aboard F.U.B.A.R. to share information over a common communications backbone. Engine, fuel, navigation, and communication data are available to every connected device without requiring separate wiring between components. Each device can transmit data, receive data, or both, depending on its function.</p>
+        </div>
+
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Data Flow</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8pt; line-height: 1.45; color: #334155; margin-bottom: 0;">
+            <li>Engine sensors send analog signals to the Engine Gateway.</li>
+            <li>The Engine Gateway converts the analog signals into NMEA 2000 data.</li>
+            <li>Fuel tank senders provide fuel level information for both tanks.</li>
+            <li>The NMEA 2000 backbone distributes data to all connected devices.</li>
+            <li>The Garmin GPSMAP 942xsv displays navigation, engine, fuel, and AIS information.</li>
+            <li>The Garmin AIS 800 shares vessel position and receives AIS targets from nearby vessels.</li>
+            <li>The ICOM M510BB VHF radio uses GPS position from the network for DSC emergency calling and position reporting.</li>
+            <li>A PC or laptop can connect through the NMEA 2000 USB adapter for diagnostics, configuration, software updates, and troubleshooting.</li>
+          </ul>
+        </div>
+
+        <div class="nmea-container-compact" style="margin-top: 5px;">
+          <img class="nmea-img-compact" src="assets/nmea_data_flow.png" alt="NMEA 2000 Network Data Flow">
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 9B: NMEA 2000 NETWORK DATA FLOW DETAILS                              -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-nmea-data-flow-details">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>NMEA 2000 Network Data Flow</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 25px;">
+        <div class="info-block info-card">
+          <h2>Best Practices</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8.5pt; line-height: 1.6; color: #334155;">
+            <li>One sensor can provide data to multiple devices.</li>
+            <li>The chartplotter displays network data but is not required for the network to operate.</li>
+            <li>If one device fails or is turned off, the remaining network continues to function.</li>
+            <li>Verify each device is recognized on the network during installation.</li>
+            <li>Keep all connected devices updated with the latest firmware.</li>
+            <li>Document all connected devices and their network addresses for future maintenance.</li>
+          </ul>
+        </div>
+
+        <div class="info-block info-card" style="border-left: 3.5px solid #10b981;">
+          <h2>Information Shared Across the Network</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8.5pt; line-height: 1.6; color: #334155;">
+            <li>GPS Position</li>
+            <li>Course Over Ground (COG)</li>
+            <li>Speed Over Ground (SOG)</li>
+            <li>AIS Targets</li>
+            <li>Engine RPM</li>
+            <li>Oil Pressure</li>
+            <li>Coolant Temperature</li>
+            <li>Alternator Voltage</li>
+            <li>Fuel Tank Levels</li>
+            <li>DSC Position Data</li>
+            <li>Navigation Alarms and System Status</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
 
   <!-- ========================================================================= -->
   <!-- PAGE 7: 4.2 NMEA 2000 BACKBONE LAYOUT                                     -->
@@ -516,101 +621,175 @@
           </div>
         </div>
       </header>
-      <div class="nmea-container">
-        <!-- SVG NMEA 2000 Network Layout -->
-        <svg viewBox="0 0 600 450" style="width: 100%; height: 100%; max-height: 8in;">
-          <!-- Legend Box -->
-          <rect x="25" y="320" width="160" height="100" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
-          <text x="35" y="338" font-size="9.5" font-weight="700" fill="#0f172a">LEGEND</text>
-          
-          <line x1="35" y1="355" x2="65" y2="355" stroke="#b45309" stroke-width="3.5"/>
-          <text x="75" y="358" font-size="8" fill="#334155">Backbone Cable</text>
+      <div class="info-single-col" style="gap: 24px;">
+        <div class="info-block">
+          <p style="font-size: 8.5pt; line-height: 1.5; color: #334155; margin-bottom: 0;">The NMEA 2000 backbone is the communication network that connects all of the electronic systems aboard F.U.B.A.R. It allows compatible devices to share navigation, engine, fuel, AIS, and communications data over a single network. The backbone is designed to be simple, reliable, and easy to expand as new equipment is added.</p>
+        </div>
 
-          <line x1="35" y1="375" x2="65" y2="375" stroke="#0284c7" stroke-width="2" stroke-dasharray="2,2"/>
-          <text x="75" y="378" font-size="8" fill="#334155">Drop Cable (Max 6m)</text>
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Best Practices</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8pt; line-height: 1.45; color: #334155; margin-bottom: 0;">
+            <li>Use one continuous NMEA 2000 backbone—do not create branches or loops.</li>
+            <li>Install a 120 Ω terminator at each end of the backbone.</li>
+            <li>Connect each device to its own T-connector and drop cable.</li>
+            <li>Power the network from one fused 12-volt power tee only.</li>
+            <li>Mount the backbone in a dry, protected location near the helm whenever possible.</li>
+            <li>Keep drop cables under 20 ft (6 m).</li>
+            <li>Support and secure all cables to prevent vibration and chafing.</li>
+            <li>Keep network cables away from ignition wiring and other high-current electrical cables.</li>
+            <li>Leave at least one spare T-connector for future expansion.</li>
+            <li>Label both ends of every drop cable.</li>
+            <li>Test the network before permanently securing the wiring.</li>
+          </ul>
+        </div>
 
-          <rect x="42" y="390" width="10" height="12" fill="#0f172a"/>
-          <text x="75" y="400" font-size="8" fill="#334155">T-Connector</text>
-
-          <circle cx="47" cy="412" r="5" fill="#ef4444"/>
-          <text x="75" y="415" font-size="8" fill="#334155">Terminator (120 Ohm)</text>
-
-          <!-- NMEA Backbone Main Line -->
-          <line x1="80" y1="200" x2="520" y2="200" stroke="#b45309" stroke-width="4"/>
-          
-          <!-- Terminators -->
-          <circle cx="80" cy="200" r="7" fill="#ef4444"/>
-          <text x="65" y="185" font-size="8" font-weight="700" fill="#ef4444" text-anchor="middle">TERM (M)</text>
-          
-          <circle cx="520" cy="200" r="7" fill="#ef4444"/>
-          <text x="535" y="185" font-size="8" font-weight="700" fill="#ef4444" text-anchor="middle">TERM (F)</text>
-
-          <!-- T-Connectors -->
-          <!-- T1 -->
-          <rect x="145" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="151" y1="200" x2="151" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: Garmin GPSMAP -->
-          <rect x="111" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <rect x="111" y="70" width="80" height="12" fill="#0f172a"/>
-          <text x="151" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">GARMIN 1042xsv</text>
-          <text x="151" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Chartplotter</text>
-
-          <!-- T2 -->
-          <rect x="235" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="241" y1="200" x2="241" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: ICOM Radio -->
-          <rect x="201" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <rect x="201" y="70" width="80" height="12" fill="#0f172a"/>
-          <text x="241" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">ICOM M510BB</text>
-          <text x="241" y="98" font-size="7.5" fill="#475569" text-anchor="middle">VHF Radio</text>
-
-          <!-- T3 -->
-          <rect x="325" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="331" y1="200" x2="331" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: em-trak AIS -->
-          <rect x="291" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <rect x="291" y="70" width="80" height="12" fill="#0f172a"/>
-          <text x="331" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">EM-TRAK B953</text>
-          <text x="331" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Class B AIS</text>
-
-          <!-- T4 -->
-          <rect x="415" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="421" y1="200" x2="421" y2="120" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: Engine Gateway -->
-          <rect x="381" y="70" width="80" height="50" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <rect x="381" y="70" width="80" height="12" fill="#0f172a"/>
-          <text x="421" y="80" font-size="7.5" fill="#ffffff" font-weight="700" text-anchor="middle">ACTISENSE EMU-1</text>
-          <text x="421" y="98" font-size="7.5" fill="#475569" text-anchor="middle">Engine Gateway</text>
-
-          <!-- T5 (Bottom Drop) -->
-          <rect x="180" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="186" y1="200" x2="186" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: Fuel Flow Sensor -->
-          <circle cx="186" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <text x="186" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">FUEL</text>
-          <text x="186" y="325" font-size="7.5" fill="#475569" text-anchor="middle">Flow Sensor</text>
-
-          <!-- T6 (Bottom Drop) -->
-          <rect x="290" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="296" y1="200" x2="296" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: Fuel Level Sensor -->
-          <circle cx="296" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <text x="296" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">LEVEL</text>
-          <text x="296" y="325" font-size="7.5" fill="#475569" text-anchor="middle">Tank Sender</text>
-
-          <!-- T7 (Bottom Drop) -->
-          <rect x="400" y="194" width="12" height="12" fill="#0f172a"/>
-          <line x1="406" y1="200" x2="406" y2="280" stroke="#0284c7" stroke-dasharray="2,2" stroke-width="2"/>
-          <!-- Device: Heading Sensor -->
-          <circle cx="406" cy="295" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
-          <text x="406" y="298" font-size="7.5" font-weight="700" text-anchor="middle" fill="#0f172a">HEADING</text>
-          <text x="406" y="325" font-size="7.5" fill="#475569" text-anchor="middle">9-Axis Compass</text>
-
-        </svg>
+        <div class="nmea-container-compact" style="margin-top: 10px;">
+          <img class="nmea-img-compact" src="assets/nmea_backbone.png" alt="NMEA 2000 Backbone Layout">
+        </div>
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 8-DEVICES: DEVICES CONNECTED TO NMEA BACKBONE                        -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-7-devices">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>NMEA 2000 Backbone Layout</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 25px;">
+        <div class="info-block info-card">
+          <h2>Devices Connected to the Backbone</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8.5pt; line-height: 1.6; color: #334155;">
+            <li>Garmin GPSMAP 942xsv Chartplotter</li>
+            <li>Garmin AIS 800 Transceiver</li>
+            <li>ICOM M510BB Black Box VHF Radio</li>
+            <li>Engine Gateway</li>
+            <li>Fuel Tank 1 Sender (Port)</li>
+            <li>Fuel Tank 2 Sender (Stbd)</li>
+            <li>Garmin GFS 10 Fuel Flow Sensor</li>
+            <li>NMEA 2000 USB Adapter (PC/Laptop Diagnostics)</li>
+            <li>Spare Drop for Future Expansion</li>
+          </ul>
+        </div>
+
+        <div class="info-block info-card" style="border-left: 3.5px solid #b45309;">
+          <h2>Future Expansion</h2>
+          <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px; font-style: italic;">The backbone includes a spare connection for adding equipment later without rebuilding the network. Possible additions include:</p>
+          <ul style="list-style-type: circle; padding-left: 20px; font-size: 8.5pt; line-height: 1.6; color: #334155;">
+            <li>Garmin GMR 18 xHD3 Radar</li>
+            <li>Heading Sensor</li>
+            <li>Autopilot</li>
+            <li>Additional engine or environmental sensors</li>
+            <li>Other NMEA 2000 compatible devices</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 12: ENGINE & FUEL SYSTEM INTEGRATION - DETAILS                       -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-engine-integration">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Engine & Fuel System Integration</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 12px;">
+        <div class="info-block">
+          <p style="font-size: 8.5pt; line-height: 1.5; color: #334155; margin-bottom: 0;">This diagram shows how the engine monitoring, fuel monitoring, and NMEA 2000 network work together to provide both reliable analog backup instrumentation and modern digital engine and fuel data. The analog gauges remain the primary backup if the NMEA 2000 network or chartplotter is unavailable, while the Actisense EMU-1 converts engine and fuel tank sender information into NMEA 2000 data for display on the Garmin GPSMAP chartplotter. The Garmin GFS 10 measures actual fuel consumption and sends fuel flow information directly to the NMEA 2000 backbone, allowing the chartplotter to calculate fuel economy, fuel used, fuel remaining, and estimated cruising range.</p>
+        </div>
+
+        <div class="nmea-container-compact" style="margin-top: 5px;">
+          <img class="nmea-img-compact" src="assets/engine_integration.png" alt="Engine & Fuel System Integration Layout" style="max-height: 3.5in;">
+        </div>
+
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Installation Notes</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 7.5pt; line-height: 1.35; color: #334155; margin-bottom: 0;">
+            <li>Install and verify all analog engine gauges first.</li>
+            <li>Connect the engine sensors to the analog gauges as originally designed.</li>
+            <li>Install both fuel tank senders and verify each analog fuel gauge operates correctly.</li>
+            <li>Install the manual fuel selector valve and verify proper operation.</li>
+            <li>Install the Actisense EMU-1 behind the helm where the engine and fuel sender wiring terminates.</li>
+            <li>Connect the following to the EMU-1: Tachometer signal, Oil pressure sender, Coolant temperature sender, Alternator voltage, Port fuel tank sender, and Starboard fuel tank sender.</li>
+            <li>Connect the EMU-1 to the NMEA 2000 backbone using a standard Micro-C drop cable.</li>
+            <li>Configure the EMU-1 and verify all engine and fuel tank data is displayed correctly on the Garmin GPSMAP chartplotter.</li>
+            <li>Install the Garmin GFS 10 module on the NMEA 2000 backbone.</li>
+            <li>Install the GFS 10 inline fuel flow sensor in the fuel hose between the manual fuel selector valve and the engine fuel pump, ensuring it measures fuel flow from either tank.</li>
+            <li>Connect the fuel flow sensor to the GFS 10 module and configure the chartplotter for the engine's fuel tank capacity and fuel flow calibration.</li>
+            <li>Perform a sea trial and verify engine data, fuel levels, fuel flow, fuel economy, and fuel range calculations.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 13: RECOMMENDED INSTALLATION ORDER (PRIORITY)                        -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-engine-integration-schematic">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Engine & Fuel System Integration</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 25px;">
+        <div class="info-block info-card" style="margin-bottom: 0; border-left: 3.5px solid #1e3a8a;">
+          <h2>Recommended Installation Order (Priority)</h2>
+          <ul style="list-style-type: disc; padding-left: 20px; font-size: 8.5pt; line-height: 1.5; color: #334155; margin-bottom: 0;">
+            <li>Install and verify analog engine gauges (independent backup instrumentation).</li>
+            <li>Install and verify analog fuel gauges for both fuel tanks.</li>
+            <li>Install the manual fuel selector valve and verify proper fuel delivery from both tanks.</li>
+            <li>Install the NMEA 2000 backbone and network power.</li>
+            <li>Install the Garmin GPSMAP 942xsv and verify network communication.</li>
+            <li>Install the Actisense EMU-1 and connect all engine and fuel tank sender inputs.</li>
+            <li>Configure and test the EMU-1 so engine and fuel tank information appears on the chartplotter.</li>
+            <li>Sea trial the boat to verify all engine monitoring and fuel level functions.</li>
+            <li>Install the Garmin GFS 10 module on the NMEA 2000 network.</li>
+            <li>Install the GFS 10 inline fuel flow sensor between the manual fuel selector valve and the engine fuel pump.</li>
+            <li>Calibrate the fuel flow system and verify fuel consumption, fuel economy, fuel used, and remaining range calculations.</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
@@ -645,8 +824,8 @@
             <tr>
               <td>1.1</td>
               <td>1</td>
-              <td>010-02683-00</td>
-              <td>Garmin GPSMAP 1042xsv, 10" Chartplotter / Sonar Combo</td>
+              <td>010-01738-00</td>
+              <td>Garmin GPSMAP 942xsv, 9" Chartplotter / Sonar Combo</td>
               <td>Garmin</td>
             </tr>
             <tr>
@@ -666,106 +845,453 @@
             <tr>
               <td>1.4</td>
               <td>1</td>
-              <td>HM-235B</td>
+              <td>HM-195GB</td>
               <td>ICOM CommandMic IV Remote Handset (for M510BB)</td>
               <td>ICOM</td>
             </tr>
             <tr>
               <td>1.5</td>
               <td>1</td>
-              <td>B953-05-AIS</td>
-              <td>em-trak B953 Class B AIS Transceiver (5W SOTDMA, internal splitter)</td>
-              <td>em-trak</td>
+              <td>010-01916-12</td>
+              <td>Garmin AIS 800 Class B AIS Transceiver (with internal splitter)</td>
+              <td>Garmin</td>
             </tr>
             <tr>
               <td>1.6</td>
-              <td>1</td>
-              <td>ANT-SPLIT-V2</td>
-              <td>VHF/AIS/FM Antenna Splitter (Low insertion loss)</td>
-              <td>Shakespeare</td>
-            </tr>
-            <tr>
-              <td>1.7</td>
               <td>1</td>
               <td>010-02309-00</td>
               <td>NMEA 2000 Starter Kit (10m backbone, drop cables, power tap)</td>
               <td>Garmin</td>
             </tr>
             <tr>
-              <td>1.8</td>
+              <td>1.7</td>
               <td>10</td>
               <td>010-11085-00</td>
               <td>NMEA 2000 T-Connector (Micro-C style)</td>
               <td>Garmin</td>
             </tr>
             <tr>
-              <td>1.9</td>
+              <td>1.8</td>
               <td>2</td>
               <td>010-11080-00</td>
               <td>NMEA 2000 Terminators (1 Male, 1 Female)</td>
               <td>Garmin</td>
             </tr>
             <tr>
-              <td>1.10</td>
+              <td>1.9</td>
               <td>1</td>
               <td>010-11089-00</td>
               <td>NMEA 2000 Power Cable (Fused drop connection)</td>
               <td>Garmin</td>
             </tr>
             <tr>
-              <td>1.11</td>
+              <td>1.10</td>
               <td>1</td>
-              <td>16307</td>
-              <td>Fuel Flow Sensor (In-line turbine, 0.5–30 GPH)</td>
-              <td>Moeller</td>
+              <td>NGX-1-USB</td>
+              <td>NMEA 2000 to USB Gateway (PC/Laptop Interface)</td>
+              <td>Actisense</td>
             </tr>
             <tr>
-              <td>1.12</td>
-              <td>1</td>
+              <td>1.11</td>
+              <td>2</td>
               <td>32648</td>
               <td>Fuel Tank Sending Unit (Reed switch type, 240–33 Ohm)</td>
               <td>Moeller</td>
             </tr>
             <tr>
-              <td>1.13</td>
+              <td>1.12</td>
               <td>1</td>
               <td>EMU-1</td>
               <td>Actisense Engine Monitoring Unit (Analog-to-N2K Gateway)</td>
               <td>Actisense</td>
             </tr>
             <tr>
-              <td>1.14</td>
+              <td>1.13</td>
               <td>1</td>
               <td>5023</td>
               <td>VDO Oil Pressure Sender (0–80 PSI, 10–180 Ohm)</td>
               <td>VDO</td>
             </tr>
             <tr>
-              <td>1.15</td>
+              <td>1.14</td>
               <td>1</td>
               <td>323-801</td>
               <td>VDO Water Temperature Sender (100–250°F)</td>
               <td>VDO</td>
             </tr>
             <tr>
-              <td>1.16</td>
+              <td>1.15</td>
               <td>1</td>
               <td>2141</td>
               <td>Blue Sea Systems Voltage Sense Module (for automatic charging)</td>
               <td>Blue Sea</td>
             </tr>
+            <tr>
+              <td>1.16</td>
+              <td>1</td>
+              <td>010-00671-00</td>
+              <td>Garmin GFS 10 Fuel Flow Sensor (includes inline fuel filter)</td>
+              <td>Garmin</td>
+            </tr>
           </tbody>
         </table>
       </div>
       <footer class="section-footer">
-        <span>F.U.B.A.R. 22' Bartender - Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 15: PHASED PURCHASING PARTS LIST                                     -->
+  <!-- ========================================================================= -->
+  <!-- ========================================================================= -->
+  <!-- PAGE 15: PHASED PURCHASING PARTS LIST (PHASES 1-2)                       -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-phased-purchasing-1">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Phased Purchasing Parts List</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 15px;">
+        
+        <!-- Phase 1 Card Box -->
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Phase 1 – Essential Vessel Systems</h2>
+          <table class="manual-table" style="font-size: 7.2pt; margin-top: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Part Description</th>
+                <th style="width: 25%;">Part Number</th>
+                <th style="width: 8%; text-align: center;">Qty</th>
+                <th style="width: 8%; text-align: right;">Unit</th>
+                <th style="width: 9%; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Marine Deep-Cycle Battery (Group 24)</td>
+                <td>DP-24-12V</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">$150.00</td>
+                <td style="text-align: right;">$300.00</td>
+              </tr>
+              <tr>
+                <td>Blue Sea 5511e Dual Circuit Select Battery Switch</td>
+                <td>5511e</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$55.00</td>
+                <td style="text-align: right;">$55.00</td>
+              </tr>
+              <tr>
+                <td>Blue Sea 5026 ST Blade Fuse Block (12 Circuit)</td>
+                <td>5026</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$50.00</td>
+                <td style="text-align: right;">$50.00</td>
+              </tr>
+              <tr>
+                <td>Blue Sea 2141 Voltage Sense Module</td>
+                <td>2141</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$110.00</td>
+                <td style="text-align: right;">$110.00</td>
+              </tr>
+              <tr>
+                <td>Perko LED Bi-Color Bow Navigation Light</td>
+                <td>1331DP1CHR</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$65.00</td>
+                <td style="text-align: right;">$65.00</td>
+              </tr>
+              <tr>
+                <td>Perko LED All-Around White Anchor Light</td>
+                <td>1400DP4CHR</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$70.00</td>
+                <td style="text-align: right;">$70.00</td>
+              </tr>
+              <tr>
+                <td>Rule 500 GPH Submersible Bilge Pump</td>
+                <td>25D</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$35.00</td>
+                <td style="text-align: right;">$35.00</td>
+              </tr>
+              <tr>
+                <td>Blue Sea Bilge Pump Control Switch Panel</td>
+                <td>8259</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$45.00</td>
+                <td style="text-align: right;">$45.00</td>
+              </tr>
+              <tr>
+                <td>Blue Sea Dual USB + 12V Outlet Panel</td>
+                <td>1016</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$35.00</td>
+                <td style="text-align: right;">$35.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: #f8fafc; border-top: 1.5px solid #cbd5e1; color: #1e3a8a;">
+                <td colspan="4" style="text-align: right; text-transform: uppercase;">Phase 1 Total:</td>
+                <td style="text-align: right;">$765.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Phase 2 Card Box -->
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Phase 2 – Helm & Navigation</h2>
+          <table class="manual-table" style="font-size: 7.2pt; margin-top: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Part Description</th>
+                <th style="width: 25%;">Part Number</th>
+                <th style="width: 8%; text-align: center;">Qty</th>
+                <th style="width: 8%; text-align: right;">Unit</th>
+                <th style="width: 9%; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Garmin GPSMAP 942xsv 9" Chartplotter Combo</td>
+                <td>010-01738-00</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$900.00</td>
+                <td style="text-align: right;">$900.00</td>
+              </tr>
+              <tr>
+                <td>Airmar B175M Bronze Thru-Hull Transducer</td>
+                <td>010-12735-20</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$950.00</td>
+                <td style="text-align: right;">$950.00</td>
+              </tr>
+              <tr>
+                <td>NMEA 2000 Starter Kit (Backbone/Power tap)</td>
+                <td>010-02309-00</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$80.00</td>
+                <td style="text-align: right;">$80.00</td>
+              </tr>
+              <tr>
+                <td>NMEA 2000 T-Connector</td>
+                <td>010-11085-00</td>
+                <td style="text-align: center;">10</td>
+                <td style="text-align: right;">$20.00</td>
+                <td style="text-align: right;">$200.00</td>
+              </tr>
+              <tr>
+                <td>NMEA 2000 Terminators (Male/Female Pair)</td>
+                <td>010-11080-00</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">$15.00</td>
+                <td style="text-align: right;">$30.00</td>
+              </tr>
+              <tr>
+                <td>NMEA 2000 Power Cable</td>
+                <td>010-11089-00</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$25.00</td>
+                <td style="text-align: right;">$25.00</td>
+              </tr>
+              <tr>
+                <td>Moeller Fuel Tank Sending Unit (Reed switch)</td>
+                <td>32648</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: right;">$45.00</td>
+                <td style="text-align: right;">$90.00</td>
+              </tr>
+              <tr>
+                <td>Actisense EMU-1 Engine Monitoring Unit</td>
+                <td>EMU-1</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$380.00</td>
+                <td style="text-align: right;">$380.00</td>
+              </tr>
+              <tr>
+                <td>VDO Oil Pressure Sender (0-80 PSI)</td>
+                <td>5023</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$40.00</td>
+                <td style="text-align: right;">$40.00</td>
+              </tr>
+              <tr>
+                <td>VDO Water Temperature Sender</td>
+                <td>323-801</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$35.00</td>
+                <td style="text-align: right;">$35.00</td>
+              </tr>
+              <tr>
+                <td>Garmin GFS 10 Fuel Flow Sensor</td>
+                <td>010-00671-00</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$220.00</td>
+                <td style="text-align: right;">$220.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: #f8fafc; border-top: 1.5px solid #cbd5e1; color: #1e3a8a;">
+                <td colspan="4" style="text-align: right; text-transform: uppercase;">Phase 2 Total:</td>
+                <td style="text-align: right;">$2,950.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
 
   <!-- ========================================================================= -->
-  <!-- PAGE 9: REVISION CONTROL & DOCUMENT INFORMATION                           -->
+  <!-- PAGE 16: PHASED PURCHASING PARTS LIST (PHASES 3-5)                       -->
+  <!-- ========================================================================= -->
+  <div class="page" id="page-phased-purchasing-2">
+    <div class="page-border">
+      <header class="section-header">
+        <div class="header-content">
+          <div class="header-left">
+            <img class="header-logo" src="assets/fubar_logo.png" alt="F.U.B.A.R.">
+            <span class="header-divider">|</span>
+            <h1>Phased Purchasing Parts List</h1>
+          </div>
+        </div>
+      </header>
+      <div class="info-single-col" style="gap: 15px;">
+
+        <!-- Phase 3 Card Box -->
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Phase 3 – Communications</h2>
+          <table class="manual-table" style="font-size: 7.2pt; margin-top: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Part Description</th>
+                <th style="width: 25%;">Part Number</th>
+                <th style="width: 8%; text-align: center;">Qty</th>
+                <th style="width: 8%; text-align: right;">Unit</th>
+                <th style="width: 9%; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ICOM M510BB Black Box VHF Radio Base Unit</td>
+                <td>M510BB</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$650.00</td>
+                <td style="text-align: right;">$650.00</td>
+              </tr>
+              <tr>
+                <td>ICOM CommandMic IV Remote Handset</td>
+                <td>HM-195GB</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$180.00</td>
+                <td style="text-align: right;">$180.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: #f8fafc; border-top: 1.5px solid #cbd5e1; color: #1e3a8a;">
+                <td colspan="4" style="text-align: right; text-transform: uppercase;">Phase 3 Total:</td>
+                <td style="text-align: right;">$830.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Phase 4 Card Box -->
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Phase 4 – Commissioning & Diagnostics</h2>
+          <table class="manual-table" style="font-size: 7.2pt; margin-top: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Part Description</th>
+                <th style="width: 25%;">Part Number</th>
+                <th style="width: 8%; text-align: center;">Qty</th>
+                <th style="width: 8%; text-align: right;">Unit</th>
+                <th style="width: 9%; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Actisense NMEA 2000 to USB Gateway</td>
+                <td>NGX-1-USB</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$250.00</td>
+                <td style="text-align: right;">$250.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: #f8fafc; border-top: 1.5px solid #cbd5e1; color: #1e3a8a;">
+                <td colspan="4" style="text-align: right; text-transform: uppercase;">Phase 4 Total:</td>
+                <td style="text-align: right;">$250.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Phase 5 Card Box -->
+        <div class="info-block info-card" style="margin-bottom: 0;">
+          <h2>Phase 5 – Future Enhancements</h2>
+          <table class="manual-table" style="font-size: 7.2pt; margin-top: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Part Description</th>
+                <th style="width: 25%;">Part Number</th>
+                <th style="width: 8%; text-align: center;">Qty</th>
+                <th style="width: 8%; text-align: right;">Unit</th>
+                <th style="width: 9%; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Garmin AIS 800 Class B AIS Transceiver</td>
+                <td>010-01916-12</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$1,000.00</td>
+                <td style="text-align: right;">$1,000.00</td>
+              </tr>
+              <tr>
+                <td>Garmin GMR 18 xHD3 Radar Dome</td>
+                <td>010-02847-00</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">$1,800.00</td>
+                <td style="text-align: right;">$1,800.00</td>
+              </tr>
+              <tr style="font-weight: bold; background-color: #f8fafc; border-top: 1.5px solid #cbd5e1; color: #1e3a8a;">
+                <td colspan="4" style="text-align: right; text-transform: uppercase;">Phase 5 Total:</td>
+                <td style="text-align: right;">$2,800.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Project Total Summary Box -->
+        <div class="info-block info-card" style="margin-bottom: 0; border-left: 3.5px solid #0f172a; background-color: #0f172a; color: #ffffff;">
+          <h2 style="color: #ffffff; border-bottom: 1.5px solid #ffffff; font-size: 8.5pt;">Project Summary Total Cost</h2>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 9pt; font-weight: bold;">
+            <span>ESTIMATED TOTAL TO COMPLETE ALL PHASES:</span>
+            <span style="font-size: 11pt; color: #38bdf8;">$7,595.00</span>
+          </div>
+        </div>
+
+      </div>
+      <footer class="section-footer">
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 16: REVISION CONTROL & DOCUMENT INFORMATION                           -->
   <!-- ========================================================================= -->
   <div class="page" id="page-9">
     <div class="page-border">
@@ -794,24 +1320,10 @@
           <tbody>
             <tr>
               <td>1.0</td>
-              <td>05/24/26</td>
+              <td>07/07/26</td>
               <td>Initial Release of Electronics & Electrical System Manual</td>
               <td>All</td>
-              <td>Lead Tech</td>
-            </tr>
-            <tr>
-              <td>1.1</td>
-              <td>06/01/26</td>
-              <td>Added fuel management sensor details and updated wiring schematics</td>
-              <td>3-8, 3-9, 5-4, 5-5</td>
-              <td>Lead Tech</td>
-            </tr>
-            <tr>
-              <td>1.2</td>
-              <td>06/05/26</td>
-              <td>Added engine alarm circuits and updated BOM parts pricing</td>
-              <td>5-6, 9-2 to 9-8</td>
-              <td>Lead Tech</td>
+              <td>Dersham</td>
             </tr>
           </tbody>
         </table>
@@ -822,8 +1334,8 @@
           <div class="doc-info-grid">
             <div class="doc-info-item"><strong>Document Title:</strong> Calkins Bartender Electronics & Electrical System Manual</div>
             <div class="doc-info-item"><strong>Document Number:</strong> CB-ELC-MAN-001</div>
-            <div class="doc-info-item"><strong>Current Revision:</strong> 1.2</div>
-            <div class="doc-info-item"><strong>Date:</strong> June 5, 2026</div>
+            <div class="doc-info-item"><strong>Current Revision:</strong> 1.0</div>
+            <div class="doc-info-item"><strong>Date:</strong> July 7, 2026</div>
           </div>
           <div class="notes-bottom">
             NOTE: This document is a living manual. Updates and modifications should be recorded above, and all affected pages updated accordingly.
@@ -832,8 +1344,9 @@
 
       </div>
       <footer class="section-footer">
-        <span>Calkins Bartender Electronics Manual</span>
-        <span class="page-num"></span>
+        <span class="footer-left">F.U.B.A.R.</span>
+        <span class="footer-center">22' BARTENDER - ELECTRONICS SYSTEM MANUAL</span>
+        <span class="footer-right page-num"></span>
       </footer>
     </div>
   </div>
