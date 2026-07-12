@@ -29,7 +29,7 @@
       <!-- Bottom Split Panel (Logo & Details side-by-side) -->
       <div class="cover-bottom-split">
         <div class="cover-bottom-left">
-          <img class="cover-logo" src="assets/logo.png" alt="Bartender Boats Logo">
+          <img class="cover-logo" src="assets/calkins_craft_plaque.jpg" alt="Calkins Craft Plaque">
         </div>
         <div class="cover-bottom-right">
           <div class="cover-details">
@@ -266,12 +266,12 @@
 
         <div class="info-block">
           <h2>Electrical Architecture</h2>
-          <p>Separate Engine and House power buses, and charge from smart battery isolators when using shore power or the alternator while under way. Use marine-grade wiring, quality circuit protection, and reserve capacity to supply potential future radar, heading sensor,and autopilot.</p>
+          <p>Separate Engine and House power buses, and charge from smart battery isolators when using shore power or the alternator while under way. Use marine-grade wiring, quality circuit protection, and reserve capacity to supply potential future radar, heading sensor, autopilot, blackbox ICOM radio with CommandMic, and AIS.</p>
         </div>
 
         <div class="info-block">
           <h2>Engine Monitoring Goals</h2>
-          <p>Display RPM, oil pressure, coolant temperature, battery voltage, fuel level, fuel flow, fuel used, and range on the Garmin. Install independent low-oil-pressure and high-temperature alarms.</p>
+          <p>Display RPM, oil pressure, coolant temperature, battery voltage, fuel level, fuel flow, fuel used, and range on the Garmin. Install independent low-oil-pressure and high-temperature alarms. Display fuel level starboard, fuel level port, RPM, oil pressure, engine temperature, battery voltage and amperage on analog gauges at the helm.</p>
         </div>
 
         <div class="info-block info-card centered-card">
@@ -419,23 +419,13 @@
             <li>Install NMEA 2000 backbone.</li>
             <li>Install engine monitoring interface and sensors.</li>
             <li>Verify engine data is displayed correctly on the chartplotter.</li>
+            <li>Fuel Monitor Garmin GFS 10</li>
           </ul>
           <div class="phase-milestone">Milestone: The vessel can be safely navigated using GPS while continuously monitoring engine health.</div>
         </div>
 
         <div class="phase-card">
-          <h3>Phase 3 – Communications</h3>
-          <div class="phase-objective">Objective: Provide VHF communication capability.</div>
-          <ul class="phase-list">
-            <li>Install ICOM M510BB black-box VHF radio.</li>
-            <li>Install ICOM HM-195GB CommandMic.</li>
-            <li>Verify DSC and NMEA 2000 communications.</li>
-          </ul>
-          <div class="phase-milestone">Milestone: The vessel can communicate with other vessels and shore stations.</div>
-        </div>
-
-        <div class="phase-card">
-          <h3>Phase 4 – Commissioning</h3>
+          <h3>Phase 3 – Commissioning</h3>
           <div class="phase-objective">Objective: Validate the complete electrical system.</div>
           <ul class="phase-list">
             <li>Verify all electrical circuits.</li>
@@ -449,9 +439,12 @@
         </div>
 
         <div class="phase-card">
-          <h3>Phase 5 – Future Enhancements</h3>
+          <h3>Phase 4 – Future Enhancements</h3>
           <div class="phase-objective">Objective: Expand system capabilities.</div>
           <ul class="phase-list">
+            <li>Install ICOM M510BB black-box VHF radio.</li>
+            <li>Install ICOM HM-195GB CommandMic.</li>
+            <li>Verify DSC and NMEA 2000 communications.</li>
             <li>Install Garmin AIS 800 transceiver (collision avoidance).</li>
             <li>Install Garmin GMR 18 xHD3 radar.</li>
             <li>Verify AIS targets and radar overlay functions on chartplotter.</li>
@@ -493,7 +486,7 @@
             <li>Do not over-tighten the bronze locking nut, as this can damage the mahogany hull structure or strip the threads.</li>
             <li>Torque the lock nut to 25–30 ft-lbs using a custom spanner wrench or large adjustable wrench.</li>
             <li>Verify correct transducer tilt angle (e.g., 0°, 12°, or 20° version matches deadrise) before tightening.</li>
-            <li>Connect the Airmar B175M CHIRP Transducer directly to the Garmin GPSMAP 942xsv using the transducer cable. The transducer is not an NMEA 2000 device and does not connect to the NMEA 2000 backbone. The chartplotter processes the sonar data and can share depth information with other compatible devices over the NMEA 2000 network.</li>
+            <li>Connect the Airmar B175M CHIRP Transducer directly to the Garmin GPSMAP 942xsv using the transducer cable. <strong>The transducer is not an NMEA 2000 device and does not connect to the NMEA 2000 backbone.</strong> The chartplotter processes the sonar data and can share depth information with other compatible devices over the NMEA 2000 network.</li>
           </ul>
         </div>
 
@@ -676,9 +669,7 @@
             <li>Garmin GPSMAP 942xsv Chartplotter</li>
             <li>Garmin AIS 800 Transceiver</li>
             <li>ICOM M510BB Black Box VHF Radio</li>
-            <li>Engine Gateway</li>
-            <li>Fuel Tank 1 Sender (Port)</li>
-            <li>Fuel Tank 2 Sender (Stbd)</li>
+            <li>Engine Gateway - EMU-1</li>
             <li>Garmin GFS 10 Fuel Flow Sensor</li>
             <li>NMEA 2000 USB Adapter (PC/Laptop Diagnostics)</li>
             <li>Spare Drop for Future Expansion</li>
@@ -689,7 +680,7 @@
           <h2>Future Expansion</h2>
           <p style="font-size: 8.5pt; color: #475569; margin-bottom: 8px; font-style: italic;">The backbone includes a spare connection for adding equipment later without rebuilding the network. Possible additions include:</p>
           <ul style="list-style-type: circle; padding-left: 20px; font-size: 8.5pt; line-height: 1.6; color: #334155;">
-            <li>Garmin GMR 18 xHD3 Radar</li>
+            <li>Garmin GMR 18 xHD3 Radar - attached directly to the Garmin 942xsv</li>
             <li>Heading Sensor</li>
             <li>Autopilot</li>
             <li>Additional engine or environmental sensors</li>
@@ -1277,7 +1268,7 @@
           <h2 style="color: #ffffff; border-bottom: 1.5px solid #ffffff; font-size: 8.5pt;">Project Summary Total Cost</h2>
           <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 9pt; font-weight: bold;">
             <span>ESTIMATED TOTAL TO COMPLETE ALL PHASES:</span>
-            <span style="font-size: 11pt; color: #38bdf8;">$7,595.00</span>
+            <span style="font-size: 11pt; color: #ffffff;">$7,595.00</span>
           </div>
         </div>
 

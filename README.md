@@ -30,7 +30,7 @@ brew install pango
 Set up a python virtual environment and install `weasyprint`:
 ```bash
 # Navigate to the project folder
-cd /Users/randydersham/.gemini/antigravity/scratch/installation_manual
+cd /Users/randydersham/.gemini/antigravity-ide/scratch/fubar-electrical-manual
 
 # Create a virtual environment
 python3 -m venv venv
@@ -66,7 +66,7 @@ We use a private GitHub repository named **`fubar-electrical-manual`** to keep b
 ### Accessing & Editing on Your Second Computer
 1. Open terminal on your second computer and clone the repository:
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/fubar-electrical-manual.git
+   git clone https://github.com/randydersham-eng/fubar-electrical-manual.git
    ```
 2. Set up the local python virtual environment and run the build script (following the **Getting Started** guide above).
 
